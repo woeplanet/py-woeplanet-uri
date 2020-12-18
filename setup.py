@@ -12,7 +12,7 @@ if os.path.exists(egginfo):
     rmtree(egginfo)
 
 version = open('VERSION').read()
-nspkgs = find_namespace_packages(include=['woeplanet.*'])
+nspkgs = find_namespace_packages(include=['woeplanet.utils.*'])
 
 setup(
     name=pkgname,
